@@ -1,42 +1,76 @@
-1. Open STM32CubeIDE
+# STM32H755ZIQ LED Blink Project
+
+This guide shows how to create a simple LED blink project on the **STM32H755ZIQ Nucleo board** using STM32CubeIDE.
+
+---
+
+## 1. Open STM32CubeIDE
 Launch STM32CubeIDE and select your workspace.
 
-2. Create a New Project
-Go to: File → New → STM32 Project
-Select the Board Selector tab
-Search for: NUCLEO-H755ZIQ
-Select the board → click Next → Finish
+---
 
-3. Save the Default Configuration
-CubeMX will open automatically.
-Save the configuration:
-File → Save
-User LEDs on STM32H755ZIQ
-You may use PB0/PE1/PB14
+## 2. Create a New Project
+1. Go to: `File → New → STM32 Project`  
+2. Select the **Board Selector** tab  
+3. Search for: `NUCLEO-H755ZIQ`  
+4. Select the board → click **Next → Finish**
 
-4. Add LED Blink Code (CM7 Project)
-Open:
-CM7/Core/Src/main.c
-Inside the while(1) loop, add:
+---
 
+## 3. Save the Default Configuration
+- CubeMX will open automatically.  
+- Save the configuration: `File → Save`  
+
+**User LEDs on STM32H755ZIQ:**  
+You may use **PB0 / PE1 / PB14**
+
+---
+
+## 4. Add LED Blink Code (CM7 Project)
+1. Open the file: `CM7/Core/Src/main.c`  
+2. Inside the `while(1)` loop, add:
+
+```c
 HAL_GPIO_WritePin(GPIOx, GPIO_PIN_y, GPIO_PIN_SET);
 HAL_Delay(1000);
 HAL_GPIO_WritePin(GPIOx, GPIO_PIN_y, GPIO_PIN_RESET);
 HAL_Delay(1000);
 
+# STM32H755ZIQ LED Blink Project
 
-Replace x and y with the port and pin of the LED.
+This guide shows how to create a simple LED blink project on the **STM32H755ZIQ Nucleo board** using STM32CubeIDE.
 
-Example: Blink LED on PB0
-HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_SET);
+---
+
+## 1. Open STM32CubeIDE
+Launch STM32CubeIDE and select your workspace.
+
+---
+
+## 2. Create a New Project
+1. Go to: `File → New → STM32 Project`  
+2. Select the **Board Selector** tab  
+3. Search for: `NUCLEO-H755ZIQ`  
+4. Select the board → click **Next → Finish**
+
+---
+
+## 3. Save the Default Configuration
+- CubeMX will open automatically.  
+- Save the configuration: `File → Save`  
+
+**User LEDs on STM32H755ZIQ:**  
+You may use **PB0 / PE1 / PB14**
+
+---
+
+## 4. Add LED Blink Code (CM7 Project)
+1. Open the file: `CM7/Core/Src/main.c`  
+2. Inside the `while(1)` loop, add:
+
+```c
+HAL_GPIO_WritePin(GPIOx, GPIO_PIN_y, GPIO_PIN_SET);
 HAL_Delay(1000);
-HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_RESET);
+HAL_GPIO_WritePin(GPIOx, GPIO_PIN_y, GPIO_PIN_RESET);
 HAL_Delay(1000);
 
-5. Debug and Flash the Code
-Go to Run → Debug Configurations
-Select Debugger
-Under ST-LINK S/N, click Scan
-Click Apply
-Click Debug
-The board will program and the selected LED will start blinking.
