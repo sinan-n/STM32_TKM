@@ -51,7 +51,9 @@ status=HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_6);
 	    	count=count+1;
 }
 ```
- Project → Build Project
+ Project → Build Project  
+
+ 
  Run → Debug Configurations
 
 
