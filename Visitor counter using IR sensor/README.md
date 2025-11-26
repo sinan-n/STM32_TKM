@@ -27,11 +27,17 @@ Open the `.ioc` file and configure:
 ### **2. PB0 → LED Output**
 file-save
 
-# 3.coding in main.c
-Add 
+# 3. Coding in `main.c`
+
+Inside **main.c (CM7 core)**, modify as follows:
+
+### Add global variables at the top:
+```c
 int status;
 int count;
-Add
+```
+### Add the following code inside the `while(1)` loop:
+```c
 status=HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_6);
 
 	    if(status==0)
@@ -43,8 +49,11 @@ status=HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_6);
 	    	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,RESET);
 
 	    	count=count+1;
+}
+```
+# Project → Build Project
+#  Run → Debug Configurations
 
-	    }
-inside the while(1) loop
-Project → Build Project
-Debugg and Run
+
+
+
