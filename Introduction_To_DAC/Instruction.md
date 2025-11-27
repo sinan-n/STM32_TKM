@@ -91,6 +91,8 @@ These values will be used in the **lookup table** for creating the sine wave.
 > Note: The **frequency** of this sine wave will **not** be calculated in this experiment. This will be covered in a separate experiment.
 
 ## Conclusion
+![WhatsApp Image 2025-11-27 at 15 26 41_c86577d4](https://github.com/user-attachments/assets/e16fcacb-39d5-44b9-8b46-426245d6f26f)
+
 
 In this experiment, we successfully generated a **DAC-based sine wave** using a lookup table with **8-bit resolution**. By assigning pre-calculated DAC values to the output pin (PA4), we were able to vary the amplitude to approximate a sine waveform.
 
@@ -102,7 +104,7 @@ $$
 V_{out} = \frac{V_{max}}{2} \cdot \sin(\theta) + \frac{V_{max}}{2}
 $$
 
-where \(V_{max} = 3.3V\).
+where $$\(V_{max} = 3.3V\).$$
 
 2. **DAC value calculation from the desired output voltage:**
 
