@@ -52,9 +52,9 @@ We have limited the **maximum voltage to 3.1V** to provide a safety margin.
 - Steps in Excel:
   1. Map **0° to 360°** into the range **0 to 256**.
   2. Calculate **V<sub>out</sub>** for each degree using:
-
+  
      ```
-     f(x) = (3.3 / 2) * SIN(RADIANS(A2#)) + (3.3 / 2)
+     V_out = (3.3 / 2) * SIN(RADIANS(A2#)) + (3.3 / 2)
      ```
 
   3. Calculate the corresponding **DAC value** for each V<sub>out</sub>:
