@@ -191,3 +191,7 @@ Error_Handler();
 ---
 
 
+-SAI configuration:
+<img width="1699" height="882" alt="Screenshot 2025-11-27 213639" src="https://github.com/user-attachments/assets/75a54ee5-b5ff-4fd6-8bb1-0900e3484b3a" />
+
+
