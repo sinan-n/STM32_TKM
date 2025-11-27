@@ -189,9 +189,35 @@ Error_Handler();
 4. Speak or clap near the INMP441; you should see `MicSamples[]` change around zero.
 
 ---
+### Viewing samples in Live Expressions (STM32CubeIDE)
+
+1. Start a **Debug** session for the CM7 project.
+2. Open the Live Expressions view:
+   - In the menu bar, go to **Window → Show View → Other…**
+   - Expand **Debug** and select **Live Expressions**, then click **Open**.
+3. Add variables to watch:
+   - In the Live Expressions view, click the **“Add new expression”** line.
+   - Type `MicBuf[0]`, press **Enter**.
+   - Repeat for `MicBuf[1]`, `MicBuf[2]`, or add a range like `MicBuf[0..31]` if your IDE supports it.
+   - Add `MicSamples[0]`, `MicSamples[1]`, etc. the same way.
+4. Run the program:
+   - Click **Resume** (green play button).
+   - After a moment, pause execution; the values in `MicBuf[]` and `MicSamples[]` will update each time `HAL_SAI_Receive` finishes.
+   - Speak or clap near the microphone and watch the numbers change around zero.
+
 
 
 - SAI configuration:
 <img width="1699" height="882" alt="Screenshot 2025-11-27 213639" src="https://github.com/user-attachments/assets/75a54ee5-b5ff-4fd6-8bb1-0900e3484b3a" />
+
+- RCC:
+<img width="1708" height="909" alt="Screenshot 2025-11-27 213712" src="https://github.com/user-attachments/assets/0525b3f9-3593-496c-888b-c2a49337936f" />
+
+- Clock configuration:
+<img width="1677" height="820" alt="image" src="https://github.com/user-attachments/assets/2ec06628-2b3f-4eda-a672-3813f9f6cd56" />
+
+- Expected result:
+<img width="1444" height="672" alt="Screenshot 2025-11-27 204541" src="https://github.com/user-attachments/assets/4700b885-d93e-45d4-976b-7403cc0d41ae" />
+
 
 
