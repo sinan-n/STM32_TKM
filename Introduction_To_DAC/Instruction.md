@@ -65,7 +65,7 @@ We have limited the **maximum voltage to 3.1V** to provide a safety margin.
 
   4. Round the values and add a **5% margin** for safety.
   5. You can find a copy of the Excel sheet containing the DAC values here:  
-[ADC values.xlsx](https://github.com/sinan-n/STM32_TKM/blob/main/Introduction_To_DAC/ADC%20values.xlsx)
+[ADC values.xlsx](https://github.com/sinan-n/STM32_TKM/blob/main/Introduction_To_DAC/ADC%20values%20(2).xlsx)
 
 These values will be used in the **lookup table** for creating the sine wave.
 
