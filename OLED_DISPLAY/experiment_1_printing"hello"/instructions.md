@@ -114,14 +114,10 @@ SSD1306_Init();
 inside the while(1) loop add
 ```c
 SSD1306_Fill(SSD1306_COLOR_BLACK);
-
 SSD1306_GotoXY(0, 0);
-
 SSD1306_Puts("HELLO", &Font_11x18, SSD1306_COLOR_WHITE);
-
 SSD1306_UpdateScreen();
 HAL_Delay(1000);
-
 ```
 ## 5. Building and flashing
 
