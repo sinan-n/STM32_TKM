@@ -102,12 +102,12 @@ Include the SSD1306 and fonts headers at the top of `main.c`:
 #include "fonts.h"
 #include "ssd1306.h"
 ```
-After
+In main loop after
 ```c
 MX_GPIO_Init();
 MX_I2C1_Init();
 ```
-in main.c add
+add
 ```c
 SSD1306_Init();
 ```
