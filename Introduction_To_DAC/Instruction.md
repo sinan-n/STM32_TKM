@@ -15,7 +15,7 @@ Since 8-bit is  a standard integer size, we use a **8-bit integer datatype** to 
 
 ## Steps to Create the Lookup Table
 
-- Since the maximum value supported by the DAC at 8 bit resolution  is **8¹²** (12-bit resolution),  
+- Since the maximum value supported by the DAC at 8 bit resolution  is **2¹²** (12-bit resolution),  
   the sine wave will reach its peak of **3.3V** when the DAC is given the digital value **255**.
   <img width="1334" height="497" alt="Screenshot 2025-11-27 104618" src="https://github.com/user-attachments/assets/7746427b-b063-4778-a8d3-14cb0bfd2953" />
 
