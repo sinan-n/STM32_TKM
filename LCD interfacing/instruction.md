@@ -66,7 +66,9 @@ Ensure internal pull-ups are enabled on SDA & SCL.
 4. place the code for hearder file: i2c-lcd.h
 5.Navigate: `CM7 > Core > src` (Core/Inc/**lcd.c**).
 <img width="1923" height="1083" alt="image" src="https://github.com/user-attachments/assets/c2c35266-37f8-4614-a038-397325951a9a" />
-6.place the code for source file: i2c-lcd.c
+
+6.place the code for source file: i2c-lcd.c.
+
 7. Open **main.c**
 
 ### Step 6: Build and Run
