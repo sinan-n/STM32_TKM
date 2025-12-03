@@ -223,15 +223,9 @@ Generate the code **“Project”** menu in the top bar and choose **“Generate
      /* USER CODE END 4 */
      ```
 
-4. **Build and flash**
-
-   - Click **Project → Build Project** (or hammer icon).  
-   - Start a debug session and run; `audio_buf` will now be filled with ADC samples from the MAX9814.
-  <img width="1910" height="716" alt="image" src="https://github.com/user-attachments/assets/0cf700ce-294b-4001-b91b-726b6dcbd7b9" />
-
 The STM32H755 is dual‑core (M7 + M4). CubeIDE can generate a **dual core boot synchronization** sequence guarded by `DUAL_CORE_BOOT_SYNC_SEQUENCE`. For this simple single‑core audio project, it is easier to disable that part.
 
-5.**Disabling Dual core boot sinc**
+4.**Disabling Dual core boot sinc**
 
   - in main.c locate the definition:
    ```c
