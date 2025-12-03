@@ -117,6 +117,7 @@ $$
 
 
 
+
 Where:
 
 - \(f_{\text{timer\_clk}}\) = timer input clock (Hz)  
