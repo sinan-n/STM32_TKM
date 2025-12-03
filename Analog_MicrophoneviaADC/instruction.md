@@ -111,9 +111,7 @@ In the **Clock Configuration** view, verify that â€œTo APB1 Timer clocks (MHz)â€
 
   General formula for timer frequency is:
 ```
-\[
 f_{\text{update}} = \frac{f_{\text{timer\_clk}}}{(PSC + 1)\times(ARR + 1)}
-\]
 ```
 
 Where:
