@@ -116,6 +116,14 @@ Since we are using **8-bit resolution**, the DAC can take values from 0 to 255.
 
 > By using these formulas, we mapped the sine wave into **8-bit DAC values**, stored in a **lookup table**, and produced the analog output. The maximum voltage was limited to **3.1V** for safety.
 
+## Code for Implementing DAC
+
+In the DAC code we have to specify the bit resolution.
+
+HAL_DAC_SetValue(&hdac1, DAC_CHANNEL_1, DAC_ALIGN_8B_R, lookup[pos]);
+
+This line specifies that the DAC is configured for 8-bit resolution with right-aligned data.
+
 
 
 
