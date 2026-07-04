@@ -360,3 +360,10 @@ hello
 # Conclusion
 
 In this experiment, UART communication was established between the STM32H755ZI-Q Nucleo board and a PC using the onboard ST-LINK Virtual COM Port. The microcontroller continuously transmitted the string `"hello"` every second, and the data was successfully displayed on PuTTY. This demonstrates the basic implementation of UART communication using USART3 in asynchronous mode on the STM32H755ZI-Q.
+
+<img width="1406" height="731" alt="image" src="https://github.com/user-attachments/assets/4c678a03-05c8-412c-ba17-61f236d61d2b" />
+# output
+<img width="1436" height="783" alt="image" src="https://github.com/user-attachments/assets/635a6943-bb6e-46bf-93e9-a84680d2d6d2" />
+
+
+
